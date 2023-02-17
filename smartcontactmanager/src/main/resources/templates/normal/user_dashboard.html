@@ -1,0 +1,49 @@
+<!Doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+th:replace="normal/base::Layout(~{::section})">
+<head>
+	<meta charset="UTF-8"/>
+	<title>This Is About Page</title>
+</head>
+<body>
+	<section>
+	
+	<div class="container">
+			<div class="card">
+				<div class="card-body my-5">
+					<div class="container text-center">
+						<img src="" style="height: 200px; width: 200px"
+							class="my_profile_picture" th:src="@{'/img/contact_logo.png'}"
+							alt="profile photo" />
+					</div>
+
+					<h1
+						class="text-center mt-3 text-secondary font-italic font-weight-light">
+						Start Adding your contact on cloud...</h1>
+
+					<a th:href="@{/user/add-contact}"
+						class="btn btn-primary mt-4 btn-block text-uppercase">Add
+						New Contact</a>
+						
+						<hr />
+						
+						
+
+				</div>
+			</div>
+		</div>
+
+		<script>
+        $(document).ready(() => {
+          $(".item").removeClass("active");
+          $("#home-link").addClass("active");
+        });
+      </script>
+      <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+	
+	
+	</section>
+	
+
+</body>
+</html>
